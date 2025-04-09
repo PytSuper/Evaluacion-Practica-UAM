@@ -1,11 +1,16 @@
+calificaciones = []
 class Estudiante:
-    def __init__(self, nombre, edad, carrera, calificaciones):
+    def __init__(self, nombre, edad, carrera):
         self.nombre = nombre
         self.edad = edad
         self.carrera = carrera
         self.calificaciones = calificaciones
     def promedio(self):
-        return sum(self.calificaciones) / len(self.calificaciones)
+        if len(calificaciones) != 0:
+            print(len(calificaciones))
+            return sum(self.calificaciones) / len(self.calificaciones)
+        else:
+            return 0
     def agregar_calificacion(self, calificacion):
         self.calificaciones.append(calificacion)
     def info(self):
