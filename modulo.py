@@ -6,8 +6,7 @@ class Estudiante:
         self.carrera = carrera
         self.calificaciones = calificaciones
     def promedio(self):
-        if len(calificaciones) != 0:
-            print(len(calificaciones))
+        if len(self.calificaciones) != 0:
             return sum(self.calificaciones) / len(self.calificaciones)
         else:
             return 0
